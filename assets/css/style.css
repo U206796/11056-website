@@ -1,11 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
 
 body {
-background-color: white;
-color: black;
-/*make sure you set family and size on body*/
-font-family: 'Nunito', sans-serif;
-font-size: 16px;
+    background-color: white;
+    color: black;
+    /*make sure you set family and size on body*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+.vl {
+    border-left: 6px solid beige;
+    height: 2150px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.vl2 {
+    border-right: 6px solid beige;
+    height: 2150px;
+    position: absolute;
+    left: 10%;
+    margin-left: -3px;
+    top: 0;
 }
 
 /* Typography */
@@ -16,140 +35,183 @@ h3,
 h4,
 h5,
 h6 {
-font-family: 'Nunito', serif;
+    font-family: 'Nunito', serif;
 }
 
 h1 {
-padding-top: 25px;
-display: inline-block; 
-font-size: 25px; 
-text-transform: uppercase;
-letter-spacing: 2px;
-color: black; 
+    margin-bottom: 20px;
+    padding-top: 25px;
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
 }
 
 h2 {
-font-size: 20px;
-text-transform: uppercase;
-border-bottom: 5px solid black;
-padding-bottom: 10px;
-letter-spacing: 1px;  
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 5px solid black;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
 
 }
 
 h3 {
-font-size: 22px;  
+    font-size: 20px;
+    border-bottom: 5px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+h4 {
+    font-size: 22px;
 
 }
 
 p {
-font-size: 20px; 
-line-height: 20px;
-margin-bottom: 20px
-
+    fontsize: 20px;
+    line-height: 20px;
+    margin-bottom: 20px
 }
 
-/* anchor styles */ 
+/* anchor styles */
 a {
-color: black;
-text-decoration: none;
+    color: black;
+    text-decoration: none;
 
 }
 
 a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 
 }
+
 a:visited {
-color: #cccccc;
+    color: #cccccc;
 }
 
 a: active {
-color: red; 
+    color: red;
 }
 
 /* main containers */
 
 .wrapper {
-width: 980px;
-margin: 0 auto;
+    width: 980px;
+    margin: 0 auto;
 }
 
 header {
-padding: 20px;
+    padding: 20px;
 }
 
 nav {
-float: right;
-margin-top: 25px;
+    float: right;
+    margin-top: 25px;
 }
 
-nav ul { 
-
-}
+nav ul {}
 
 nav ul li {
-display: inline;
-margin-right: 10px;
+    display: inline;
+    margin-right: 10px;
 }
 
 nav ul li a {
-color: black;
-text-decoration: none;
-padding: 10px 15px;  
-text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
 }
 
 nav ul li a:hover,
 nav ul li a.currentpage {
-text-decoration: none;
-background-color: beige;
-color:black;
+    text-decoration: none;
+    background-color: beige;
+    color: black;
 }
 
 
 main {
-padding: 20px; 
-overflow: auto;
+    padding: 20px;
+    overflow: auto;
 }
 
+main ul {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
 
-.text-container 
-{
-width: 880px; 
-margin: 0 auto;
+main ul li {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.text-container {
+    width: 880px;
+    margin: 0 auto;
+
+}
+
+.text-container2 {
+    width: 880px;
+    margin: auto;
 
 }
 
 footer {
-padding: 20px; 
-background-color: beige;
-border-top: 1px solid black;
+    position: sticky;
+    top: auto;
+    left: auto;
+    padding: 20px;
+    background-color: beige;
+    border-top: 1px solid black;
 }
 
 footer p {
-font-size; 90%;
+    font-size: 90%;
 }
 
-.leftimg{
-width: 45%;
-float: middle;
-border: 1px solid grey; 
-padding: 10px;
-background-color: white;
+.homeimg {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
 
 }
+
+.stateimg {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.backimg {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+
+}
+
 .middle {
     text-align: center;
 }
 
-.middle img {
-    width: 880px;
+.column {
+    margin-bottom: 20px;
+    float: left;
+    width: 45%;
+    padding: 15px;
 }
 
-<!-- .nav-fixed-top { 
- position: fixed;
- right: 0;
- left: 0;
- z-index: 999;
- } -->
+.row:: {
+    content: "";
+    clear: both;
+    display: table;
+}
