@@ -1,9 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
+footer {
+    top: auto;
+    left: auto;
+    padding: 20px;
+    background-color: beige;
+    border-top: 1px solid black;
+}
+
+footer p {
+    font-size: 90%;
+}
 
 body {
     background-color: white;
     color: black;
+    border-style: solid;
+    border-width: 10px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: beige;
+    border-color: beige;
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
     /*make sure you set family and size on body*/
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -39,8 +59,13 @@ h6 {
 }
 
 h1 {
-    margin-bottom: 20px;
-    padding-top: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-color: lightgray;
+    margin-bottom: 10px;
+    padding-top: 10px;
     display: inline-block;
     font-size: 25px;
     text-transform: uppercase;
@@ -163,18 +188,6 @@ main ul li {
 
 }
 
-footer {
-    position: sticky;
-    top: auto;
-    left: auto;
-    padding: 20px;
-    background-color: beige;
-    border-top: 1px solid black;
-}
-
-footer p {
-    font-size: 90%;
-}
 
 .homeimg {
     width: 100%;
